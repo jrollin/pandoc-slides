@@ -1,0 +1,107 @@
+/* override theme */
+
+body {
+    /* background: radial-gradient( #1CB5E0, #000851); */
+
+    /* background-color: #fff; */
+    /* background-image: linear-gradient(-135deg,#1400c8,#b900b4,#f50000); */
+
+    /* background: linear-gradient(210deg,#943CFF 0%,#DD45D3 40.13%,#FC9A57 90%); */
+
+    
+    /* background-color: #18b500;
+    background-image: -webkit-linear-gradient(90deg,#d8bf41 0%,#18b500 100%); */
+
+    /* background-color: #da57c8;
+    background-image: -webkit-linear-gradient(270deg,#da57c8 0%,#0029e2 100%); */
+
+
+    background-color: #00cebd;
+
+    /* background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#00cebd), to(#287257)); */
+    background: -webkit-linear-gradient(0, #00cebd, #287257);
+    background: -moz-linear-gradient(0, #00cebd, #287257);
+    background: -ms-linear-gradient(0, #00cebd, #287257);
+    background: -o-linear-gradient(0, #00cebd, #287257);
+    background: linear-gradient(0, #00cebd, #287257);
+}
+
+.reveal .controls {
+    color: #287257;
+}
+
+.reveal .progress {
+    background: rgba(0, 0, 0, 0.2);
+    color: #287257;
+    height: 5px;
+}
+
+.reveal h1 {
+    text-shadow: none;
+}
+
+@media screen and (max-width: 4000px), (max-height: 6000px) {
+    .reveal .slides {
+        font-size: 0.7em;
+    }
+}
+
+@media screen and (max-width: 900px), (max-height: 600px) {
+    .reveal .slides {
+        font-size: 0.66em;
+    }
+}
+
+@media screen and (max-width: 700px), (max-height: 400px) {
+    .reveal .slides {
+        font-size: 0.66em;
+    }
+}
+
+
+img {
+
+    border: none;
+    box-shadow: none;
+    background: none;
+}
+
+
+.reveal section img {
+
+    border: none;
+    box-shadow: none;
+    background: none;
+}
+
+.reveal pre {
+    box-shadow: none;
+}
+
+.reveal pre code {
+    /* background-color: black; */
+    max-height: 500px;
+}
+
+
+.reveal a {
+    /* color: rgb(238, 238, 238); */
+}
+
+
+.reveal code span {
+
+}
+
+code span.op {
+
+}
+
+code span.dt {
+
+}
+
+
+code span.st {
+
+}
