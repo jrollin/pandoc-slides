@@ -2,7 +2,7 @@
 
 # check reveal js lib is downloaded
 REVEAL_SRC=./revealjs
-REVEAL_TAG=3.8.0
+REVEAL_TAG=4.1.0
 if [ ! -d $REVEAL_SRC ]
 then
     wget https://github.com/hakimel/reveal.js/archive/$REVEAL_TAG.tar.gz
@@ -34,10 +34,12 @@ do
     pandoc -t revealjs -s \
         --highlight-style $THEME_DIR/my.theme \
         -o $DIST/index.html $i/index.md  \
-        -V revealjs-url=$REVEAL_SRC \
         --slide-level=2 \
         --css ./reveal.css \
-        -V theme=league
+        --mathjax \
+        -V revealjs-url=$REVEAL_SRC \
+        -V theme=league \
+        --template=./theme/template-revealjs.html.template
     # docker run -v $PWD:/source --rm jrollin/pandoc-docker -t revealjs -s --highlight-style $THEME_DIR/my.theme  -o $DIST/$i/$i.html $i/$i.md  -V revealjs-url=$REVEAL_SRC --slide-level=2 --css ./reveal.css -V theme=league
 done
 echo "done"
