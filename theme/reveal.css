@@ -1,6 +1,6 @@
 /* override theme */
 
-body {
+.reveal-viewport {
     /* background: radial-gradient( #1CB5E0, #000851); */
 
     /* background-color: #fff; */
@@ -16,15 +16,16 @@ body {
     background-image: -webkit-linear-gradient(270deg,#da57c8 0%,#0029e2 100%); */
 
 
-    background-color: #00cebd;
+   background-color: #00cebd;
 
     /* background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#00cebd), to(#287257)); */
-    background: -webkit-linear-gradient(0, #00cebd, #287257);
-    background: -moz-linear-gradient(0, #00cebd, #287257);
-    background: -ms-linear-gradient(0, #00cebd, #287257);
-    background: -o-linear-gradient(0, #00cebd, #287257);
-    background: linear-gradient(0, #00cebd, #287257);
+   background: -webkit-linear-gradient(0, #00cebd, #287257);
+   background: -moz-linear-gradient(0, #00cebd, #287257);
+   background: -ms-linear-gradient(0, #00cebd, #287257);
+   background: -o-linear-gradient(0, #00cebd, #287257);
+   background: linear-gradient(0, #00cebd, #287257);
 }
+
 
 .reveal .controls {
     color: #287257;

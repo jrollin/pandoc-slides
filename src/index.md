@@ -58,17 +58,16 @@ import { square, diag } from "lib";
 
 ---
 
-Higlight
+Code javascript  with HTML tag
 
-```js [1|3-5]
-public function foo()
-{
-   $foo = array(
-       'bar' => 'bar'
-   )
-}
 
-```
+ <pre><code data-trim data-noescape>
+(def lazy-fib
+  (concat
+   [0 1]
+   ((fn rfib [a b]
+        (lazy-cons (+ a b) (rfib b (+ a b)))) 0 1)))
+  </code></pre>
 
 ---
 
@@ -94,6 +93,15 @@ Highlight
   </tr>
 </table>
 </code></pre>
+
+
+---
+
+Math equations
+
+
+ `$$ J(\theta_0,\theta_1) = \sum_{i=0} $$`
+
 
 ## Split slides
 
@@ -144,6 +152,25 @@ Quotes:
 > My quote !
 >
 > > My quote !
+
+
+## Layout 
+
+---
+
+<div class="r-fit-text">BIG</div>
+
+---
+
+<h2 class="r-fit-text">FIT TEXT</h2>
+<h2 class="r-fit-text">CAN BE USED FOR MULTIPLE HEADLINES</h2>
+
+---
+
+
+<h2>Stretch Example</h2>
+<img class="r-stretch" src="./img/revealjs.png">
+<p>Image byline</p>
 
 ## Title 2
 
