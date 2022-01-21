@@ -1,6 +1,6 @@
 #!/bin/bash
 
-REVEAL_TAG=4.1.0
+REVEAL_TAG=4.2.1
 REVEAL_SRC=./revealjs
 THEME_DIR=./theme
 SRC_DIR=./src
@@ -50,17 +50,6 @@ pandoc -t revealjs -s \
     -V revealjs-url=$REVEAL_SRC \
     -V theme=league \
     --template=./theme/template-revealjs.html.template
-
-# docker run -v $PWD:/source --rm jrollin/pandoc-docker \
-#     -t revealjs -s \
-#     --highlight-style $THEME_DIR/my.theme \
-#     -o $DIST/index.html $SRC_DIR/index.md  \
-#     --slide-level=2 \
-#     --css ./reveal.css \
-#     --mathjax \
-#     -V revealjs-url=$REVEAL_SRC \
-#     -V theme=league \
-#     --template=./theme/template-revealjs.html.template
 
 echo "Converted !"
 

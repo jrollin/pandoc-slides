@@ -9,7 +9,7 @@ Skeleton to build slides
 * [revealjs](https://revealjs.com/) for html slides
 * [Pandoc](https://pandoc.org/installing.html#linux) for generating markdown to slides and pdf
 
-> nb: 2.9.2.2+ for revealjs 4+
+> nb: 2.9.2.2+ for revealjs 4.2.1
 
 ### Linux Deps
 
