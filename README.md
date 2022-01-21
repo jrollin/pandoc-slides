@@ -15,7 +15,9 @@ Skeleton to build slides
 
 `sudo apt install texlive texlive-latex-base texlive-fonts-recommended texlive-latex-extra`
 
-> @todo: use container for easier process
+Rq: To use docker image instead of pandoc package
+
+alias pandoc='docker run --rm --volume "$(pwd):/data" --user $(id -u):$(id -g) pandoc/latex'
 
 
 ## Howto

@@ -41,7 +41,8 @@ cp -R $REVEAL_SRC $DIST
 cp $THEME_DIR/reveal.css $DIST
 
 # convert to reveal
-pandoc -t revealjs -s \
+pandoc \
+    -t revealjs -s \
     --highlight-style $THEME_DIR/my.theme \
     -o $DIST/index.html $SRC_DIR/index.md  \
     --slide-level=2 \
